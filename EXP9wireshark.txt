@@ -1,14 +1,6 @@
-# Filter for traffic to/from specific IP address
+WIRESHARK CMDS:-
 ip.addr == 10.0.0.4
-
-# Filter for traffic to a specific destination IP address
-ip.dst == <destination_ip>
-
-# Filter for traffic on TCP port 80 (HTTP)
+ip.dst ==
 tcp.port == 80
-
-# Filter for traffic from a specific source IP address
-ip.src == <source_ip>
-
-# Filter for traffic between two specific IP addresses
+ip.src ==
 ip.addr == 10.0.0.4 && ip.addr == 8.8.8.8
